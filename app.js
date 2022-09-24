@@ -93,7 +93,7 @@ function newrow(){
 function addLits(event){
 
     if(!validateName() || !validateLastName() || !validateAdress()){
-        submitError.innerHTML = "Please fir error to submit";
+        submitError.innerHTML = "Please fix error to submit";
         return false;
     }else{
         let newItem = {
@@ -121,6 +121,7 @@ function addLits(event){
     nameError.innerHTML = "";
     lastNameError.innerHTML = "";
     adressError.innerHTML = "";
+    submitError.innerHTML = "";
     
 }
 
